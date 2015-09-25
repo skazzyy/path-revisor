@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'jacoco'
+    id 'maven-publish'
+    id 'com.github.skazzyy.sources' version '0.2.0'
+}
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'net.java.dev.jna:jna:4.2.0'
+    compile 'net.java.dev.jna:jna-platform:4.2.0'
+    
+    runtime 'org.slf4j:slf4j-simple:1.7.12'
+    
+    testCompile 'junit:junit:4.12'
+}
